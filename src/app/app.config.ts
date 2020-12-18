@@ -5,7 +5,7 @@ import { SERVICE_CONFIG } from './shared/app.services.config';
 
 export const CONFIG: Config = {
   // The base path of the URL used by app services.
-  apiEndpoint: 'http://localhost:8080/bankmanager-jee/services/rest',
+  apiEndpoint: 'http://localhost:33333/bankmanager-jee/services/rest',
   bundle: {
     path: 'bundle'
   },
@@ -15,7 +15,7 @@ export const CONFIG: Config = {
   uuid: 'com.imatia.web.bankmanager',
 
   // Title of the app
-  title: 'Bank Manager',
+  title: 'flatMate',
 
   //  Language of the application.
   locale: 'es',
