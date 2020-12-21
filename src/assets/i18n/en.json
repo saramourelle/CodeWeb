@@ -28,5 +28,11 @@
   "ADDRESS": "Address",
   "LONGITUDE": "Longitude",
   "LATITUDE": "Latitude",
-  "COMMENTS": "Comments"
+  "COMMENTS": "Comments",
+  "ALQUILERES": "Rentals",
+  "alquiler_id": "Rentals id",
+  "piso_id": "Flat id",
+  "habitacion_id": "Room id",
+  "precio": "Price",
+  "direccion": "Adress"
 }
