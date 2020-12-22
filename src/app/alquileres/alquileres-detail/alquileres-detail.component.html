@@ -1,0 +1,13 @@
+<p>alquileres-detail works!</p>
+<o-form-layout-manager title="{{'ALQUILERES' | oTranslate }}" separator=" " mode="tab" label-columns="NAME;SURNAME">
+    <div fxFlex>
+     <o-table fxFlex attr="AlquileresTable" service="alquileres" entity="alquileres" keys="ALQUILERID" 
+       columns="CUSTOMERID;ID;PHOTO;NAME;SURNAME;STARTDATE;EMAIL"
+       visible-columns="ID;PHOTO;NAME;SURNAME;STARTDATE;EMAIL" query-rows="20">
+       <o-table-column attr="PHOTO" title="PHOTO" orderable="no" searchable="no" type="image" avatar="no" 
+         empty-image="assets/images/no-image.png" image-type="base64"></o-table-column>
+       <o-table-column attr="STARTDATE" title="STARTDATE" type="date" format="LL"></o-table-column>
+       <o-table-column attr="ID" title="ID" width="100px"></o-table-column>
+     </o-table>
+    </div>
+   </o-form-layout-manager>
