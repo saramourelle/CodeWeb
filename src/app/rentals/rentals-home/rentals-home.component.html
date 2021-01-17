@@ -1,0 +1,35 @@
+<!--o-form permite crear, eliminar, actualizar y buscar datos-->
+<o-form editable-detail="no" show-header="no" layout-align="start stretch" class="employees-filters-form" fxFill>
+
+  <div fxLayout="column" fxFlex="1 1 auto">
+    <o-grid #grid attr="rentals" service="rentals" entity="rentals"
+
+      columns="RENTAL_ID;FLAT_ID;ROOM_ID;ADRESS;DESCRIPTION;EMAIL_LANDLORD;BENEFITS_DESCRIPTION"
+
+      quick-filter-columns="PRICE;ADRESS;DESCRIPTION;EMAIL_LANDLORD; "
+
+      keys="RENTAL_ID" sort-columns="PRICE" pageable="yes" query-rows="16" fixed-header="yes"
+
+      refresh-button="no" gutter-size="18px" detail-mode="none">
+
+      <o-grid-item *ngFor="let item of grid.dataArray">
+        <div (click)="openDetail(item)" fxLayout="column" fxLayoutAlign="space-evenly center"
+          class="rental-item mat-elevation-z1">
+          <div fxLayout="row" fxLayoutAlign="space-between end" class="image-container">
+            <mat-divider fxFlex></mat-divider>
+
+              <div class="image">
+                <img [src]="getImageSrc(item.RENTALPHOTO)">
+              </div>
+
+            <mat-divider fxFlex></mat-divider>
+
+          </div>
+
+      </o-grid-item>
+
+    </o-grid>
+
+  </div>
+
+</o-form>

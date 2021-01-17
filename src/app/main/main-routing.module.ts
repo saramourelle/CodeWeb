@@ -4,18 +4,15 @@ import { AuthGuardService } from 'ontimize-web-ngx';
 
 import { MainComponent } from './main.component';
 import { HomeModule } from './home/home.module';
-import { CustomersModule } from './../customers/customers.module';
-import { AlquileresModule } from '../alquileres/alquileres.module';
+//import { CustomersModule } from './../customers/customers.module';
+import {RentalsModule} from '../rentals/rentals.module'; //importacion de la referencia del nuevo modulo
 
 export function loadHomeModule() {
   return HomeModule;
 }
 
-export function loadCustomersModule() {
-  return CustomersModule;
-}
-export function loadAlquileresModule() {
-  return AlquileresModule;
+export function loadRentalsModule() {
+  return RentalsModule;
 }
 
 export const routes: Routes = [
@@ -28,13 +25,11 @@ export const routes: Routes = [
         path: 'home',
         loadChildren: loadHomeModule
       },
+
       {
-        path: 'customers',
-        loadChildren: loadCustomersModule
-      },
-      {
-        path: 'alquileres',
-        loadChildren: loadAlquileresModule
+        //modulo de alquileres relacionado con el modulo main mediante la definición de la ruta correspondiente
+        path: ' Rentals',
+        loadChildren: loadRentalsModule
       }
     ]
   }
