@@ -13,7 +13,7 @@ export class RentalsHomeComponent //implements OnInit
 
   constructor() { }
 
-  //ngOnInit() {
-  //}
+  ngOnInit() {
+  }
 
 }
