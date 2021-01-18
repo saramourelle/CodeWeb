@@ -10,6 +10,7 @@
 
   "VIEW": "Views",
   "HOME": "Home",
+  "MENU": "MENU",
 
   "ERROR_REQUIRED_FIELD": "Field is required",
   "ERROR_MIN_LENGTH_REQUIRED": "The value length entered must be at least 8 characters.",
