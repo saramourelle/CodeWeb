@@ -18,7 +18,10 @@
   "ERROR_PASS_REQUIRED": "Contraseña incorrecta.",
   "ERROR_USER_PASS_INCORRECT": "Usuario o contraseña incorrecta.",
 
+  "ABOUT US": "Sobre nosotros",
+  "CONFIGURATION": "Configuración",
   "RENTALS": "Alquileres",
+
   "alquiler_id": "Alquileres id",
   "piso_id": "Pisos id",
   "habitacion_id": "Habitaciones id",

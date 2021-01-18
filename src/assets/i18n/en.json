@@ -18,6 +18,10 @@
   "ERROR_PASS_REQUIRED": "Incorrect password.",
   "ERROR_USER_PASS_INCORRECT": "Invalid username or password.",
 
+  "ABOUT US": "About us",
+  "CONFIGURATION": "Configuration",
+
+
   "RENTALS": "Rentals",
   "alquiler_id": "Rentals id",
   "piso_id": "Flat id",
