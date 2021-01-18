@@ -1,8 +1,9 @@
 <!--o-form permite crear, eliminar, actualizar y buscar datos-->
-<o-form editable-detail="no" show-header="no" layout-align="start stretch" class="employees-filters-form" fxFill>
+
+<!-- <o-form editable-detail="no" show-header="no" layout-align="start stretch" class="employees-filters-form" fxFill>
 
   <div fxLayout="column" fxFlex="1 1 auto">
-    <o-grid #grid attr="rentals" service="rentals" entity="rentals"
+    <o-grid #grid attr="rentals" service="rentals" entity="rental"
 
       columns="RENTAL_ID;FLAT_ID;ROOM_ID;ADRESS;DESCRIPTION;EMAIL_LANDLORD;BENEFITS_DESCRIPTION"
 
@@ -31,4 +32,15 @@
 
   </div>
 
-</o-form>
+</o-form> -->
+
+<div fxFlex>
+  <o-table fxFlex attr="AlquileresTable" service="rentals" entity="alquiler" keys="alquiler_id"
+  columns="alquiler_id;piso_id;habitacion_id;precio;direccion"
+  visible-columns="alquiler_id;piso_id;habitacion_id;precio;direccion" query-rows="20">
+  <o-table-column attr="PHOTO" title="PHOTO" orderable="no" searchable="no" type="image" avatar="yes"
+  empty-image="assets/images/no-image.png" image-type="base64"></o-table-column>
+  <o-table-column attr="STARTDATE" title="STARTDATE" type="date" format="LL"></o-table-column>
+  <o-table-column attr="ID" title="ID" width="100px"></o-table-column>
+  </o-table>
+</div>

@@ -16,7 +16,7 @@ import { RentalsRoutingModule } from './rentals-routing.module';
   imports: [
     CommonModule,
     OntimizeWebModule,
-    RentalsRoutingModule,
+    RentalsRoutingModule
   ]
 })
 export class RentalsModule { }
