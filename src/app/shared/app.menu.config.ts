@@ -4,7 +4,7 @@ export const MENU_CONFIG: MenuRootItem[] = [
   //definición de los componentes en el menú lateral
   //route = ruta que aparecerá en el navegador cuando deseamos acceder a ese módulo
 
- { id: 'general_menu', name: 'GENERAL MENU', icon: '', opened: true,
+ { id: 'general_menu', name: 'MENU', icon: '', opened: true,
     items: [
 
       { id: 'home', name: 'HOME', icon: 'remove_red_eye', route: '/main/home' },
@@ -20,12 +20,11 @@ export const MENU_CONFIG: MenuRootItem[] = [
       },
 
 
-
      {
        id: 'about',
        name: 'ABOUT US',
        tooltip: 'ABOUT_CONTENT',
-        route: '/main/about',
+      route: '/main/about',
        icon: 'information',
       //   image: 'assets/images/ic_clientes.png',
       //   component: CustomersCardComponent

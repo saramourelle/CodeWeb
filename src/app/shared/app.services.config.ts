@@ -4,5 +4,11 @@ export const SERVICE_CONFIG: Object = {
   },
   'rentals': {
     'path': '/rentals'
+  },
+  'room': {
+    'path': '/room'
+  },
+  'flat': {
+    'path': '/flat'
   }
-};
+}
