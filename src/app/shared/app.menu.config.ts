@@ -21,15 +21,15 @@ export const MENU_CONFIG: MenuRootItem[] = [
 
 
 
-     {
-       id: 'about',
-       name: 'ABOUT US',
-       tooltip: 'ABOUT_CONTENT',
-        route: '/main/about',
-       icon: 'information',
+      //  {
+      //    id: 'about',
+     //    name: 'ABOUT US',
+     //    tooltip: 'ABOUT_CONTENT',
+      //     route: '/main/about',
+     //    icon: 'information',
       //   image: 'assets/images/ic_clientes.png',
       //   component: CustomersCardComponent
-      }
+      // }
     ]
  },
 
