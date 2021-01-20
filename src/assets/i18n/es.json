@@ -22,7 +22,7 @@
   "CONFIGURATION": "Configuración",
   "RENTALS": "Alquileres",
   "FLAT" : "Apartamento",
-
+  "ROOM" : "Habitación",
   "rentals_id": "Alquiler_id",
   "flat_id": "Apartamentos_id",
   "room_id": "Habitacion_id",

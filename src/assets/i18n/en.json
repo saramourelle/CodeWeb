@@ -25,6 +25,7 @@
 
   "RENTALS": "Rentals",
   "FLAT": "Flat",
+  "ROOM" : "Room",
   "rentals_id": "Rentals id",
   "flat_id": "Flat id",
   "room_id": "Room id",

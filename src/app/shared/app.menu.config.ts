@@ -19,6 +19,15 @@ export const MENU_CONFIG: MenuRootItem[] = [
         // component: CustomersCardComponent
       },
 
+      {
+        id: 'room',
+         name: 'ROOM',
+         tooltip: 'ROOM_CONTENT',
+         route: '/main/room',
+         icon: 'house',
+          // image: 'assets/images/ic_clientes.png',
+          // component: CustomersCardComponent
+        },
 
 
        {
