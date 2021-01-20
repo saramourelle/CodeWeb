@@ -25,9 +25,11 @@
 
   "RENTALS": "Rentals",
   "FLAT": "Flat",
-  "alquiler_id": "Rentals id",
-  "piso_id": "Flat id",
-  "habitacion_id": "Room id",
-  "precio": "Price",
-  "direccion": "Adress"
+  "rentals_id": "Rentals id",
+  "flat_id": "Flat id",
+  "room_id": "Room id",
+  "availability": "Availability",
+  "price": "Price",
+  "address": "Address",
+  "description": "Description"
 }

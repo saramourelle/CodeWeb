@@ -22,9 +22,12 @@
   "CONFIGURATION": "Configuración",
   "RENTALS": "Alquileres",
   "FLAT" : "Apartamento",
-  "alquiler_id": "Alquileres id",
-  "piso_id": "Pisos id",
-  "habitacion_id": "Habitaciones id",
-  "precio": "Precio",
-  "direccion": "Dirección"
+
+  "rentals_id": "Alquiler_id",
+  "flat_id": "Apartamentos_id",
+  "room_id": "Habitacion_id",
+  "availability": "Disponibilidad",
+  "price": "Precio",
+  "address": "Dirección",
+  "description": "Descripción"
 }

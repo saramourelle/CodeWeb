@@ -4,11 +4,14 @@ import { CommonModule } from '@angular/common';
 
 import { FlatRoutingModule } from './flat-routing.module';
 import { FlatHomeComponent } from './flat-home/flat-home.component';
+import { FlatDetailComponent } from './flat-detail/flat-detail.component';
 
 
 @NgModule({
   declarations: [
-    FlatHomeComponent
+    FlatHomeComponent,
+    FlatDetailComponent
+
   ],
   imports: [
     CommonModule,
