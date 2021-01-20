@@ -2,10 +2,10 @@ import { OntimizeWebModule } from 'ontimize-web-ngx'; //para poder usar los comp
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RentalsHomeComponent } from './rentals-home/rentals-home.component';
-import { RentalsDetailComponent } from './rentals-detail/rentals-detail.component';
 import { RentalsRoutingModule } from './rentals-routing.module';
-import { RentalsNewComponent } from './rentals-new/rentals-new.component';
 
+import { RentalsNewComponent } from './rentals-new/rentals-new.component';
+import { RentalsDetailComponent } from './rentals-detail/rentals-detail.component';
 
 @NgModule({
 

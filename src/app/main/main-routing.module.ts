@@ -7,13 +7,18 @@ import { HomeModule } from './home/home.module';
 //import { CustomersModule } from './../customers/customers.module';
 
 import { RentalsModule }  from  './rentals/rentals.module' //importacion de la referencia del nuevo modulo
-
+import { FlatModule} from  './flat/flat.module'
 export function loadHomeModule() {
   return HomeModule;
 }
 
+
 export function loadRentalsModule() {
   return RentalsModule;
+}
+
+export function loadFlatModule() {
+  return FlatModule;
 }
 
 export const routes: Routes = [
@@ -30,7 +35,13 @@ export const routes: Routes = [
         //modulo de alquileres relacionado con el modulo main mediante la definición de la ruta correspondiente
         path: 'rentals',
         loadChildren: loadRentalsModule
+      },
+      {
+        //modulo de pisos relacionado con el modulo main mediante la definición de la ruta correspondiente
+        path: 'flat',
+        loadChildren: loadFlatModule
       }
+
     ]
   }
 ];
