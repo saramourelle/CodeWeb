@@ -9,8 +9,8 @@ const routes: Routes = [{
   component: RoomHomeComponent
 },
 {
-    path: 'new',
-    component: RoomNewComponent
+  path: 'new',
+  component: RoomNewComponent
 },
 {
   path: ':room_id',

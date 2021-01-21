@@ -9,13 +9,14 @@ const routes: Routes = [{
   component: FlatHomeComponent
 },
 {
-  path: 'new',
-  component: FlatNewComponent
-},
-{
   path: ':flat_id',
   component: FlatDetailComponent
 },
+{
+  path: 'new',
+  component: FlatNewComponent
+},
+
 ];
 
 
