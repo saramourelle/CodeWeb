@@ -22,15 +22,17 @@
   "ABOUT US": "About us",
   "CONFIGURATION": "Configuration",
 
+  "RENTALS": "Availability",
+  "FLAT": "Flat rentals",
+  "ROOM" : "Room rentals",
 
-  "RENTALS": "Rentals",
-  "FLAT": "Flat",
-  "ROOM" : "Room",
   "rentals_id": "Rentals id",
   "flat_id": "Flat id",
   "room_id": "Room id",
   "availability": "Availability",
   "price": "Price",
   "address": "Address",
-  "description": "Description"
+  "description": "Description",
+  "image": "Image"
+
 }

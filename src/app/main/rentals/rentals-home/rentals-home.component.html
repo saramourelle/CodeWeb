@@ -1,46 +1,12 @@
 <body>
-  <!-- <o-column> -->
-  <!-- <h1>RENTALS DBEAVER</h1> -->
-  <!-- <o-form-layout-manager attr="formLayoutMngr" mode="tab" title="RENTALS" separator=","> -->
-      <div fxFlex>
-        <o-grid fxFlex #rentalsGrid attr="rentalsGrid" service="rentals" entity="rental" keys="rentals_id"
-        columns="rentals_id;flat_id;room_id;availability"  quick-filter-columns="rentals_id;flat_id;room_id;availability" show-page-size="yes" refresh-button="yes" page-size-options="10;20;30">
-          <o-grid-item *ngFor="let item of rentalsGrid.dataArray" >
-            <div>
-              {{item.availability}}
-            </div>
-            <div>
-              {{item.room_id}}
-            </div>
-            <span>{{item.rentals_id}} - {{item.flat_id}}</span>
-          </o-grid-item>
-        </o-grid>
-      </div>
-  <!-- </o-form-layout-manager> -->
-
-  <!-- <h1>ROOM DBEAVER</h1>
-
-      <div fxFlex>
-        <o-table fxFlex attr="RoomTable" service="room" entity="room" keys="room_id"
-        columns="room_id;price;address;description"
-        visible-columns="room_id;price;address;description" query-rows="20">
-        <o-table-column attr="PHOTO" title="PHOTO" orderable="no" searchable="no" type="image" avatar="yes"
-        empty-image="assets/images/no-image.png" image-type="base64"></o-table-column>
-        <o-table-column attr="STARTDATE" title="STARTDATE" type="date" format="LL"></o-table-column>
-        <o-table-column attr="ID" title="ID" width="100px"></o-table-column>
-        </o-table>
-      </div> -->
-
-  <!-- <h1>RENTALS DBEAVER</h1>
-      <div fxFlex>
-        <o-table fxFlex attr="FlatTable" service="flat" entity="flat" keys="flat_id"
-        columns="flat_id;price;address;description"
-        visible-columns="flat_id;price;address;description" query-rows="20">
-        <o-table-column attr="PHOTO" title="PHOTO" orderable="no" searchable="no" type="image" avatar="yes"
-        empty-image="assets/images/no-image.png" image-type="base64"></o-table-column>
-        <o-table-column attr="STARTDATE" title="STARTDATE" type="date" format="LL"></o-table-column>
-        <o-table-column attr="ID" title="ID" width="100px"></o-table-column>
-        </o-table>
-      </div>
-    </o-column> -->
-  </body>
+  <div fxFlex>
+    <o-grid fxFlex #rentalsGrid attr="rentalsGrid" service="rentals" entity="rental" keys="rentals_id"
+      columns="rentals_id;flat_id;room_id;availability"  quick-filter-columns="rentals_id;flat_id;room_id;availability" show-page-size="yes" refresh-button="yes" page-size-options="10;20;30">
+      <o-grid-item *ngFor="let item of rentalsGrid.dataArray" >
+        <div>{{item.availability}}</div>
+        <div> {{item.room_id}}</div>
+        <span>{{item.rentals_id}} - {{item.flat_id}}</span>
+      </o-grid-item>
+    </o-grid>
+  </div>
+</body>

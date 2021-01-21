@@ -1,12 +1,24 @@
-<p>room-home works!</p>
+<body>
+  <div fxFlex>
+    <o-grid fxFlex #flatGrid attr="flatGrid" service="flat" entity="flat" keys="flat_id"
+      columns="flat_id;price;address;description;image"  quick-filter-columns="flat_id;price;address;description;image" show-page-size="yes" refresh-button="yes" page-size-options="5;10;12">
+      <o-grid-item *ngFor="let item of flatGrid.dataArray" >
 
-<div fxFlex>
-  <o-table fxFlex attr="RoomTable" service="room" entity="room" keys="room_id"
-  columns="room_id;price;address;description"
-  visible-columns="room_id;price;address;description" query-rows="20">
-  <o-table-column attr="PHOTO" title="PHOTO" orderable="no" searchable="no" type="image" avatar="yes"
-  empty-image="assets/images/no-image.png" image-type="base64"></o-table-column>
-  <o-table-column attr="STARTDATE" title="STARTDATE" type="date" format="LL"></o-table-column>
-  <o-table-column attr="ID" title="ID" width="100px"></o-table-column>
-  </o-table>
-</div>
+        <img [src]="item.image" style="margin-top:8px">
+
+        <!-- <h4> {{item.price}} </h4> -->
+
+        <div class="price">
+          <mat-icon>money</mat-icon><span>{{ item.price }} </span>
+        </div>
+
+        <div class="address">
+          <mat-icon>domain</mat-icon><span>{{ item.address }}</span>
+        </div>
+
+        <div> {{item.description}}</div>
+
+      </o-grid-item>
+    </o-grid>
+  </div>
+</body>

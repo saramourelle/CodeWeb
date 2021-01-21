@@ -20,14 +20,16 @@
 
   "ABOUT US": "Sobre nosotros",
   "CONFIGURATION": "Configuración",
-  "RENTALS": "Alquileres",
-  "FLAT" : "Apartamento",
-  "ROOM" : "Habitación",
+
+  "RENTALS": "Disponibilidad",
+  "FLAT" : "Pisos en alquiler",
+  "ROOM" : "Habitaciones en alquiler",
   "rentals_id": "Alquiler_id",
   "flat_id": "Apartamentos_id",
   "room_id": "Habitacion_id",
   "availability": "Disponibilidad",
   "price": "Precio",
   "address": "Dirección",
-  "description": "Descripción"
+  "description": "Descripción",
+  "image": "Fotografía"
 }
