@@ -7,13 +7,15 @@ import { FlatNewComponent } from './flat-new/flat-new.component';
 const routes: Routes = [{
   path: '',
   component: FlatHomeComponent
-},{
-  path: 'flat_id',
+},
+{
+  path: 'new',
+  component: FlatNewComponent
+},
+{
+  path: ':flat_id',
   component: FlatDetailComponent
-},{
-    path: 'new',
-    component: FlatNewComponent
-  }
+},
 ];
 
 

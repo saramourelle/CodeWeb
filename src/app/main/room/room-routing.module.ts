@@ -7,13 +7,17 @@ import { RoomNewComponent } from './room-new/room-new.component';
 const routes: Routes = [{
   path: '',
   component: RoomHomeComponent
-},{
-  path: 'room_id',
+},
+{
+    path: 'new',
+    component: RoomNewComponent
+},
+{
+  path: ':room_id',
   component: RoomDetailComponent
-}, {
-  path: 'new',
-  component: RoomNewComponent
-}
+},
+
+
 ];
 
 
