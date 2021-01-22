@@ -7,7 +7,7 @@ export const MENU_CONFIG: MenuRootItem[] = [
  { id: 'general_menu', name: 'MENU', icon: '', opened: true,
     items: [
 
-      { id: 'home', name: 'HOME', icon: 'remove_red_eye', route: '/main/home' },
+      // { id: 'home', name: 'HOME', icon: 'remove_red_eye', route: '/main/home' },
 
      {
       id: 'rentals',
