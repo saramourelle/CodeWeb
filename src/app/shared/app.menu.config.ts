@@ -1,13 +1,12 @@
 import { MenuRootItem } from 'ontimize-web-ngx';
 
 export const MENU_CONFIG: MenuRootItem[] = [
-  //definición de los componentes en el menú lateral
-  //route = ruta que aparecerá en el navegador cuando deseamos acceder a ese módulo
 
+
+{ id: 'home', name: 'HOME', icon: 'remove_red_eye', route: '/main/home' },
  { id: 'general_menu', name: 'MENU', icon: '', opened: true,
-    items: [
 
-      // { id: 'home', name: 'HOME', icon: 'remove_red_eye', route: '/main/home' },
+  items: [
 
      {
       id: 'rentals',
@@ -15,8 +14,7 @@ export const MENU_CONFIG: MenuRootItem[] = [
        tooltip: 'RENTALS_CONTENT',
        route: '/main/rentals',
        icon: 'house',
-        // image: 'assets/images/ic_clientes.png',
-        // component: CustomersCardComponent
+
       },
 
       {
@@ -25,8 +23,7 @@ export const MENU_CONFIG: MenuRootItem[] = [
          tooltip: 'ROOM_CONTENT',
          route: '/main/room',
          icon: 'house',
-          // image: 'assets/images/ic_clientes.png',
-          // component: CustomersCardComponent
+
         },
 
 
@@ -36,9 +33,19 @@ export const MENU_CONFIG: MenuRootItem[] = [
         tooltip: 'FLAT_CONTENT',
           route: '/main/flat',
         icon: 'house',
-        //image: 'assets/images/ic_clientes.png',
-       // component: CustomersCardComponent
-      }
+
+      },
+
+      {
+        id: 'about',
+       name: 'ABOUT',
+       tooltip: 'ABOUT_CONTENT',
+         route: '/main/about',
+       icon: 'help_outline',
+
+     },
+
+
     ]
  },
 
@@ -46,7 +53,7 @@ export const MENU_CONFIG: MenuRootItem[] = [
     id: 'configuration', name: 'CONFIGURATION', icon: '', opened: false,
     items: [
       { id: 'settings', name: 'SETTINGS', route: '/main/settings', icon: 'settings' },
-      { id: 'about', name: 'ABOUT US', route: '/main/about', icon: 'help_outline' }
+
     ]
   },
 

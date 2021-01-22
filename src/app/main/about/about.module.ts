@@ -1,20 +1,18 @@
-import { OntimizeWebModule } from 'ontimize-web-ngx';
 import { NgModule } from '@angular/core';
+import { OntimizeWebModule } from "ontimize-web-ngx";
 import { CommonModule } from '@angular/common';
 
 import { AboutRoutingModule } from './about-routing.module';
-import { AboutComponent } from './about.component';
-
+import { AboutHomeComponent } from './about-home/about-home.component';
 
 @NgModule({
   declarations: [
-    AboutComponent
+    AboutHomeComponent
   ],
-
   imports: [
     CommonModule,
+    OntimizeWebModule,
     AboutRoutingModule,
-    OntimizeWebModule
   ]
 })
 export class AboutModule { }

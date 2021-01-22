@@ -10,5 +10,8 @@ export const SERVICE_CONFIG: Object = {
   },
   'flat': {
     'path': '/flat'
+  },
+  'about': {
+    'path': '/about'
   }
 }

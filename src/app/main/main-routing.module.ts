@@ -45,6 +45,10 @@ export const routes: Routes = [
         //modulo de alquileres relacionado con el modulo main mediante la definición de la ruta correspondiente
         path: 'rentals',
         loadChildren: loadRentalsModule
+      }, {
+        //modulo de alquileres relacionado con el modulo main mediante la definición de la ruta correspondiente
+        path: 'settings',
+        loadChildren: loadSettingsModule
       },
       {
         //modulo de pisos relacionado con el modulo main mediante la definición de la ruta correspondiente
