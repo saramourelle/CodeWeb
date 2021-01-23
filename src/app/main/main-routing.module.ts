@@ -9,6 +9,7 @@ import { HomeModule } from './home/home.module';
 import { RentalsModule }  from  './rentals/rentals.module' //importacion de la referencia del nuevo modulo
 import { FlatModule} from  './flat/flat.module'
 import { RoomModule} from  './room/room.module'
+import { AboutModule} from './about/about.module'
 import { SettingsModule } from './settings/settings.module';
 
 export function loadHomeModule() {
@@ -29,6 +30,9 @@ export function loadRoomModule() {
 }
 export function loadSettingsModule() {
   return SettingsModule;
+}
+export function loadAboutModule() {
+  return AboutModule;
 }
 
 export const routes: Routes = [
@@ -59,6 +63,10 @@ export const routes: Routes = [
         //modulo de alquileres relacionado con el modulo main mediante la definición de la ruta correspondiente
         path: 'room',
         loadChildren: loadRoomModule
+      },
+      {
+        path: 'about',
+        loadChildren: loadAboutModule
       },
       {
 

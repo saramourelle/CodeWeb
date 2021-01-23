@@ -1,0 +1,65 @@
+ody
+        {background-color: rgba(238, 185, 149, 0.952)}
+        div
+        {background-color: rgb(255, 255, 255);}
+            .H2{
+                Color: rgb(14, 85, 238);
+                size: 60px;
+                background-color: rgb(255, 250, 240);
+            }
+
+            .c1{
+                text-align: center;
+
+            }
+
+            .title{
+                text-align: center;
+                size: 40;
+                color: indigo;
+                background-color: rgba(255, 255, 255);
+            }
+
+            .title2{
+                text-align: center;
+                size: 40;
+                color: rgb(107, 17, 25);
+                background-color: rgba(209, 209, 209, 0.842);
+            }
+
+            .questions{
+                    text-align: justify
+
+            }
+
+            .c2 {
+                color: rgb(3, 3, 3);
+                size: 20px;
+                text-align: center;
+            }
+            .c3{
+                color: black;
+                size: 20;
+                text-align: justify;
+
+            }
+
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: rgb(127, 78, 146);
+                color: white;
+                text-align: center;
+
+            }
+            .fondot {
+                background-color: dimgrey;
+            }
+
+            .font {
+
+                font-family: Arial;
+                font-size: 200%;
+            }
