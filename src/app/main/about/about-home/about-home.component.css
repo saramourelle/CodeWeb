@@ -15,8 +15,8 @@ ody
 
             .title{
                 text-align: center;
-                size: 40;
-                color: indigo;
+                size: 80;
+                color: rgba(240, 135, 37, 0.678);
                 background-color: rgba(255, 255, 255);
             }
 
@@ -35,7 +35,7 @@ ody
             .c2 {
                 color: rgb(3, 3, 3);
                 size: 20px;
-                text-align: center;
+                text-align: justify;
             }
             .c3{
                 color: black;
@@ -62,4 +62,10 @@ ody
 
                 font-family: Arial;
                 font-size: 200%;
+            }
+
+
+            table tr {
+                color: rgba(0, 0, 0, 0.952);
+                background-color: rgba(160, 160, 160, 0.829);
             }

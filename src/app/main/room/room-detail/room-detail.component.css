@@ -11,4 +11,19 @@ div
     .c1{
         text-align: center;}
 
+    .c2 {
+            color: rgb(3, 3, 3);
+            size: 20px;
+            text-align: justify;
+        }
+     .c3{
+            color: black;
+            size: 40;
+            text-align: center;
+     }
         
+
+     .espaciado{
+         padding: 30px  
+     
+     }

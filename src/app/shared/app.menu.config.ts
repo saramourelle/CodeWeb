@@ -11,18 +11,18 @@ export const MENU_CONFIG: MenuRootItem[] = [
      {
       id: 'rentals',
        name: 'RENTALS',
-       tooltip: 'RENTALS_CONTENT',
+      // tooltip: 'RENTALS_CONTENT',
        route: '/main/rentals',
-       icon: 'house',
+       icon: 'search',
 
       },
 
       {
         id: 'room',
          name: 'ROOM',
-         tooltip: 'ROOM_CONTENT',
+        // tooltip: 'ROOM_CONTENT',
          route: '/main/room',
-         icon: 'house',
+         icon: 'bed',
 
         },
 
@@ -30,29 +30,27 @@ export const MENU_CONFIG: MenuRootItem[] = [
        {
          id: 'flat',
         name: 'FLAT',
-        tooltip: 'FLAT_CONTENT',
+        //tooltip: 'FLAT_CONTENT',
           route: '/main/flat',
         icon: 'house',
 
-      },
-
-      {
-        id: 'about',
-       name: 'ABOUT',
-       tooltip: 'ABOUT_CONTENT',
-         route: '/main/about',
-       icon: 'help_outline',
-
-     },
-
+      }
 
     ]
  },
 
   {
-    id: 'configuration', name: 'CONFIGURATION', icon: '', opened: false,
+    id: 'Know More', name: 'KNOW MORE', icon: '', opened: false,
     items: [
-      { id: 'settings', name: 'SETTINGS', route: '/main/settings', icon: 'settings' },
+      {
+        id: 'about',
+       name: 'ABOUT US',
+       //tooltip: 'ABOUT_CONTENT',
+        route: '/main/about',
+       icon: 'star',
+
+     }
+      //{ id: 'settings', name: 'SETTINGS', route: '/main/settings', icon: 'settings' },
 
     ]
   },

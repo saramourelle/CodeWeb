@@ -1,13 +1,33 @@
-<div class="c1">
-  <p>Detalle de apartamento seleccionado</p>
-  </div>
-
-
 <o-form service="flat" entity="flat" keys="flat_id" header-actions="R;I;U;D"  show-header-navigation="no">
   <o-integer-input oHidden attr="flat_id" sql-type="INTEGER"></o-integer-input>
-  <o-image attr="image"></o-image>
-  <o-integer-input attr="price"></o-integer-input>
-  <o-text-input attr="address"></o-text-input>
-  <o-text-input attr="description"></o-text-input>
-</o-form>
+
+  <o-row>
+    <o-column>
+      <o-image attr="image" required="yes"></o-image>
+      </o-column>
+
+
+      <o-column title="DETALLE DEL APARTAMENTO SELECCIONADO" fxFlex appearance='outline'> 
+        <o-row>
+                <p>
+                </p>
+                <p>
+                </p>
+  
+        </o-row>
+
+      <o-row>
+        <o-integer-input class="input-padding" attr="price" fxFlex="30" required="yes"></o-integer-input>   
+        <o-text-input attr="address" fxFlex="70" required="yes"></o-text-input>
+      </o-row>
+
+      <o-row>
+        <o-textarea-input attr="description" fxFlex></o-textarea-input>
+       </o-row>
+  </o-column>
+
+
+    
+
+
 
