@@ -2,23 +2,26 @@
   <div fxFlex>
     <o-grid fxFlex #flatGrid attr="flatGrid" service="flat" entity="flat" keys="flat_id"
       columns="flat_id;price;address;description;image"  quick-filter-columns="flat_id;price;address;description;image" show-page-size="yes" refresh-button="yes"
-    page-size-options="5;10;12" cols="3"  [ngStyle]="{'height':'1000px'}">
+    page-size-options="5;10;12" cols="3"  [ngStyle]="{'height':'100px'}">
       <o-grid-item *ngFor="let item of flatGrid.dataArray">
         <o-column layout-padding class="container-item">
-
-          <img [src]="getImageSrc(item.image)"  style="margin-top:8px">
-
-          <!-- <h4> {{item.price}} </h4> -->
-
+      
+          <img [src]="getImageSrc(item.image)"  style="margin-top:8px" width="350" height="250" >
+          
           <div class="price">
             <mat-icon>euro</mat-icon><span>{{ item.price }} </span>
          </div>
+
 
           <div class="address">
             <mat-icon>domain</mat-icon><span>{{ item.address }}</span>
           </div>
 
-          <div> {{item.description}}</div>
+           <div> {{item.description}}</div>
+
+           <p>
+             
+           </p>
         </o-column>
       </o-grid-item>
     </o-grid>
