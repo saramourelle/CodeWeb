@@ -69,3 +69,17 @@ ody
                 color: rgba(0, 0, 0, 0.952);
                 background-color: rgba(160, 160, 160, 0.829);
             }
+            .column {
+              float: absolute;
+              width: 30%;
+            }
+
+            /* Clear floats after the columns */
+            .flex-container {
+              text-align: center;
+              justify-content: space-between;
+              align-items: center;
+              display: flex;
+
+
+            }
