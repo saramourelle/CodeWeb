@@ -2,20 +2,21 @@ import { MenuRootItem } from 'ontimize-web-ngx';
 
 export const MENU_CONFIG: MenuRootItem[] = [
 
+  
 
-{ id: 'home', name: 'HOME', icon: 'remove_red_eye', route: '/main/home' },
+{ id: 'home', name: 'INICIO', icon: 'remove_red_eye', route: '/main/home' },
  { id: 'general_menu', name: 'MENU', icon: '', opened: true,
 
   items: [
 
-     {
-      id: 'rentals',
-       name: 'RENTALS',
-      // tooltip: 'RENTALS_CONTENT',
-       route: '/main/rentals',
-       icon: 'search',
+    //  {
+    //   id: 'rentals',
+    //    name: 'RENTALS',
+    //   // tooltip: 'RENTALS_CONTENT',
+    //    route: '/main/rentals',
+    //    icon: 'search',
 
-      },
+    //   },
 
       {
         id: 'room',
@@ -26,6 +27,7 @@ export const MENU_CONFIG: MenuRootItem[] = [
 
         },
 
+        
 
        {
          id: 'flat',

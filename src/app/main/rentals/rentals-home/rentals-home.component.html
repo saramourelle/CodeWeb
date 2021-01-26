@@ -1,11 +1,20 @@
 <body>
   <div fxFlex>
     <o-grid fxFlex #rentalsGrid attr="rentalsGrid" service="rentals" entity="rental" keys="rentals_id"
-      columns="rentals_id;flat_id;room_id;availability"  quick-filter-columns="rentals_id;flat_id;room_id;availability" show-page-size="yes" refresh-button="yes" page-size-options="10;20;30">
+      columns="rentals_id;room_id;price;description;flat_id;price_flat;availability"  quick-filter-columns="ntals_id;room_id;price;description;flat_id;price_flat;availability" 
+      show-page-size="yes" refresh-button="yes"
+    page-size-options="5;10;12"   [ngStyle]="{'height':'1000px'}">
       <o-grid-item *ngFor="let item of rentalsGrid.dataArray" >
+
+        <img [src]="getImageSrc(item.image_flat)"  style="margin-top:8px">
+
         <div>{{item.availability}}</div>
+        <div>{{item.price}}</div>
+        <div>{{item.description}}</div>
+        <div>{{item.availability}}</div>
+
         <div> {{item.room_id}}</div>
-        <span>{{item.rentals_id}} - {{item.flat_id}}</span>
+        <!-- <span>{{item.rentals_id}} - {{item.flat_id}}</span> -->
       </o-grid-item>
     </o-grid>
   </div>
